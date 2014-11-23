@@ -216,6 +216,10 @@
       color: @text;
     }
   }
+
+  &.type {
+    color: @type;
+  }
 }
 
 .entity {
@@ -236,16 +240,16 @@
     //text-decoration: underline;
   }
 
+  &.name.type {
+    color: @type;
+  }
+
   &.other.attribute-name {
     color: @attribute;
 
     &.id {
       color: @blue;
     }
-  }
-
-  &.name.type {
-    color: @type;
   }
 
   &.other.inherited-class {
@@ -255,7 +259,7 @@
 
 .meta {
   &.class {
-    color: @light-orange;
+    color: @text;
   }
 
   &.link {
