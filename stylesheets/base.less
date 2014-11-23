@@ -69,17 +69,6 @@
   color: @comment;
 }
 
-.entity {
-  &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
-  }
-
-  &.other.inherited-class {
-    color: @green;
-  }
-}
-
 .keyword {
   color: @keyword;
 
@@ -102,13 +91,21 @@
 
 .storage {
   color: @storage;
+
+  &.type {
+    color: @type;
+  }
 }
 
 .constant {
   color: @constant;
 
   &.character.escape {
-    color: @cyan;
+    color: lighten(@string, 20%);
+  }
+
+  &.other.placeholder {
+    color: @string;
   }
 
   &.numeric {
@@ -122,6 +119,10 @@
   &.other.symbol {
     color: @green;
   }
+
+  &.language {
+    color: @keyword;
+  }
 }
 
 .variable {
@@ -133,6 +134,10 @@
 
   &.parameter.function {
     color: @syntax-text-color;
+  }
+
+  &.other.dot-access {
+    color: @text;
   }
 }
 
@@ -208,7 +213,7 @@
     color: @keyword;
 
     &.any-method {
-      color: @blue;
+      color: @text;
     }
   }
 }
@@ -227,16 +232,24 @@
   }
 
   &.name.tag {
-    color: @red;
-    text-decoration: underline;
+    color: @tag;
+    //text-decoration: underline;
   }
 
   &.other.attribute-name {
-    color: @orange;
+    color: @attribute;
 
     &.id {
       color: @blue;
     }
+  }
+
+  &.name.type {
+    color: @type;
+  }
+
+  &.other.inherited-class {
+    color: @green;
   }
 }
 
@@ -260,6 +273,10 @@
   &.separator {
     background-color: @gray;
     color: @syntax-text-color;
+  }
+
+  &.preprocessor {
+    color: @preprocessor;
   }
 }
 
