@@ -1,7 +1,7 @@
 {
-  "name": "Obsidian",
+  "name": "obsidian-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A port of Notepad++'s obsidian theme",
   "repository": "https://github.com/bitsrc/obsidian-syntax",
   "license": "MIT",
