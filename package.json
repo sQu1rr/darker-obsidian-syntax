@@ -1,9 +1,9 @@
 {
-  "name": "obsidian-syntax",
+  "name": "darker-obsidian-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
-  "description": "A port of Notepad++'s obsidian theme",
-  "repository": "https://github.com/bitsrc/obsidian-syntax",
+  "version": "0.3.0",
+  "description": "Obsidian Coast syntax port from VIM based on Obsidian Theme",
+  "repository": "https://github.com/sQu1rr/darker-obsidian-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"

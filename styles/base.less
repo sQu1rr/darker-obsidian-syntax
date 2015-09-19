@@ -63,16 +63,18 @@
 
 .comment {
   color: @comment;
+  font-style: italic;
 }
 
 .keyword {
   color: @keyword;
 
-  &.control {
-    color: @keyword;
+  &.other,
+  &.control:not(.import) {
+    color: @other-keyword;
   }
 
-  &.operator {
+  &.operator:not(.logical) {
     color: @operator;
   }
 
@@ -83,18 +85,20 @@
   &.other.unit {
     color: @orange;
   }
+
 }
 
 .storage {
-  color: @storage;
+  color: @type;
 
-  &.type {
-    color: @type;
+  &.modifier.reference,
+  &.type.class {
+      color: @storage;
   }
 }
 
 .constant {
-  color: @constant;
+  color: @blue;
 
   &.character.escape {
     color: lighten(@string, 20%);
@@ -117,7 +121,7 @@
   }
 
   &.language {
-    color: @keyword;
+    color: @number;
   }
 }
 
@@ -170,7 +174,7 @@
     }
 
     &.variable {
-      color: @variable;
+      color: @operator;
     }
 
     &.parameters,
@@ -195,9 +199,8 @@
   }
 
   &.section.embedded {
-    color: @section;
+    color: @tag;
   }
-
 }
 
 .support {
@@ -206,7 +209,7 @@
   }
 
   &.function  {
-    color: @keyword;
+    color: @preprocessor;
 
     &.any-method {
       color: @text;
@@ -232,8 +235,7 @@
   }
 
   &.name.tag {
-    color: @tag;
-    //text-decoration: underline;
+    color: @preprocessor;
   }
 
   &.name.type {
@@ -333,4 +335,16 @@
 
 .atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+// PHP Specific Corrections
+&.php {
+  &.type.function.php {
+      color: @other-keyword;
+  }
+
+  &.other.keyword.use,
+  &.other.phpdoc {
+    color: @keyword;
+  }
 }
