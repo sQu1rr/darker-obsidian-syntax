@@ -8,7 +8,19 @@ The goal is not to completely replicate VIMs theme, but to create a theme that
 is comfortable to use for myself, so some improvements will be made here and
 there
 
-# Obsidian Theme for Atom
+PHP
+![alt tag](https://raw.github.com/sQu1rr/darker-obsidian-syntax/master/screenshots/php.png)
+
+JavaScript
+![alt tag](https://raw.github.com/sQu1rr/darker-obsidian-syntax/master/screenshots/js.png)
+
+CSS
+![alt tag](https://raw.github.com/sQu1rr/darker-obsidian-syntax/master/screenshots/css.png)
+
+C++
+![alt tag](https://raw.github.com/sQu1rr/darker-obsidian-syntax/master/screenshots/cpp.png)
+
+# Obsidian Theme for Atom (Original)
 
 A port of Notepad++'s obsidian theme to Atom. Only tested on PHP, matches
 closely at the moment, I may make some changes in the future however.
