@@ -5,6 +5,13 @@
   "description": "Obsidian Coast syntax port from VIM based on Obsidian Theme",
   "repository": "https://github.com/sQu1rr/darker-obsidian-syntax",
   "license": "MIT",
+  "keywords": [
+    "dark",
+    "obsidian",
+    "coast",
+    "kde",
+    "syntax"
+  ],
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   }
