@@ -1,7 +1,7 @@
 {
   "name": "darker-obsidian-syntax",
   "theme": "syntax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Obsidian Coast syntax port from VIM based on Obsidian Theme",
   "repository": "https://github.com/sQu1rr/darker-obsidian-syntax",
   "license": "MIT",
