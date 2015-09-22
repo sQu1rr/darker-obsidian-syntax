@@ -1,5 +1,6 @@
 @import "syntax-variables";
 
+.source,
 .atom-text-editor, // <- remove when Shadow DOM can't be disabled
 :host {
   background-color: @syntax-background-color;
@@ -74,7 +75,7 @@
     color: @other-keyword;
   }
 
-  &.operator:not(.logical) {
+  &.operator {
     color: @operator;
   }
 
@@ -200,6 +201,9 @@
 
   &.section.embedded {
     color: @tag;
+    .source {
+      color: @tag;
+    }
   }
 }
 
